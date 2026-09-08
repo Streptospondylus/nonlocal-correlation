@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#05070a" />
+    <meta name="description" content="Étude interactive de corrélations entre deux systèmes." />
+    <title>Étude de corrélation non locale</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="instrument" aria-labelledby="experiment-title">
+      <canvas id="field" tabindex="0" role="img" aria-label="Visualisation interactive de deux systèmes probabilistes"></canvas>
+
+      <header class="masthead">
+        <div class="eyebrow"><span class="status-mark" aria-hidden="true"></span> INSTRUMENT D’OBSERVATION · 01</div>
+        <h1 id="experiment-title">ÉTUDE DE CORRÉLATION<br class="mobile-break" /> NON LOCALE</h1>
+        <p class="session-line">SESSION <span id="session-id">01</span><span class="session-separator">/</span><span id="mode-label">MOBILE</span></p>
+      </header>
+
+      <section class="readout" aria-live="polite" aria-atomic="true">
+        <div class="readout-topline">
+          <span id="phase-label">OBSERVATION PASSIVE</span>
+          <span id="trial-count">0 / 06</span>
+        </div>
+        <p id="status-primary">Deux systèmes détectés</p>
+        <p id="status-secondary">Observation passive</p>
+        <p id="status-prompt" class="prompt">Touchez un système pour effectuer une mesure.</p>
+      </section>
+
+      <div class="measurement-hint" id="measurement-hint" aria-hidden="true">
+        <span class="hint-line"></span>
+        <span id="gesture-label">MESURE PAR IMPULSION</span>
+      </div>
+
+      <aside class="micro-readout" aria-hidden="true">
+        <span>COHÉRENCE</span><strong id="coherence-value">—</strong>
+        <span>ÉCART</span><strong id="distance-value">—</strong>
+      </aside>
+
+      <section class="analysis-panel" id="analysis-panel" aria-hidden="true">
+        <div class="analysis-kicker">RAPPORT DE SESSION</div>
+        <div class="analysis-lines" id="analysis-lines"></div>
+      </section>
+
+      <div class="interaction-note" id="interaction-note">La mesure commence au contact.</div>
+    </main>
+
+    <script src="experiment.js"></script>
+  </body>
+</html>
