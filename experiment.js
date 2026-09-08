@@ -6,7 +6,7 @@ const CONFIG = {
   systemBName: "À CONFIGURER",
   experimentTitle: "ÉTUDE DE CORRÉLATION NON LOCALE",
   session: "01",
-  variant: "desktop"
+  variant: "mobile"
 };
 
 const canvas = document.querySelector("#field");
@@ -57,8 +57,8 @@ const state = {
 };
 
 const systems = [
-  { side: "A", baseX: IS_DESKTOP ? 0.22 : 0.28, x: IS_DESKTOP ? 0.22 : 0.28, y: 0.5, seed: 1.2 },
-  { side: "B", baseX: IS_DESKTOP ? 0.78 : 0.72, x: IS_DESKTOP ? 0.78 : 0.72, y: 0.5, seed: 4.8 }
+  { side: "A", baseX: IS_DESKTOP ? 0.22 : 0.28, x: 0.28, y: 0.5, seed: 1.2 },
+  { side: "B", baseX: IS_DESKTOP ? 0.78 : 0.72, x: 0.72, y: 0.5, seed: 4.8 }
 ];
 
 let viewport = { width: 0, height: 0, dpr: 1, min: 0 };
